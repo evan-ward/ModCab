@@ -1,0 +1,28 @@
+.box {
+	text-align: center;
+	position: center;
+}
+
+button {
+	display: inline-block;
+	margin: 50px;
+	padding: 25px;
+	width: 250px;
+	height: 250px;
+	border-radius: 100%;
+	border: 1px solid #fff;
+	background-color: #fff;
+	opacity: 75%;
+	color: white;
+	text-align: center;
+	font-size: 36px;
+}
+
+.b-image {
+	height: 1060px;
+	width: 100%;
+	background: url("../../../images/mountainTop.jpg") no-repeat fixed;
+	background-size: cover;
+	position: fixed;
+	z-index: -1;
+}

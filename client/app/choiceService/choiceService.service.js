@@ -5,6 +5,22 @@ angular.module('modCabAppApp')
     
     var choice = {};
 
+    this.setStayGo = function(stayOrGo) {
+    	choice.stayGo = stayOrGo;
+    	console.log (choice.stayGo)
+    }
+
+    this.getStayGo = function() {
+    	if (choice.stayGo) {
+    		return choice.stayGo;
+    		console.log (choice.stayGo);
+
+    	} else {
+
+    		var url = $location.path().split('/')
+    		choice = url[url.length - 1];
+    		return choice.stayGo;
+
     this.setClimate = function(climateType) {
     	choice.climate = climateType;
     	console.log (choice.climate)
@@ -25,7 +41,8 @@ angular.module('modCabAppApp')
     	
     	
     }
-
+	}
+}
   });
 
 
